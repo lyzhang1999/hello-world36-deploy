@@ -1,0 +1,18 @@
+hello-world36-backend:
+  image:
+    tag: 62d465d
+  ingress:
+    hosts:
+      - host: login.hello-world36.h8r.site
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+hello-world36-frontend:
+  image:
+    tag: 7773f7d
+  ingress:
+    hosts:
+      - host: login.hello-world36.h8r.site
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
