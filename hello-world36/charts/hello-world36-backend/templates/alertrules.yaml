@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  creationTimestamp: null
+  labels:
+    role: hln-rules
+    {{- include "hello-world36-backend.labels" . | nindent 4 }}
+  name: {{ include "hello-world36-backend.fullname" . }}
+spec:
+  groups:
+  - name: h8r.io/rules
+    rules:
+    - alert: ginSerivceAlert
+      expr: "gin_request_error_count > 0"
