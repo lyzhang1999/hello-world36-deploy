@@ -9,7 +9,7 @@ hello-world36-backend:
             pathType: ImplementationSpecific
 hello-world36-frontend:
   image:
-    tag: 7773f7d
+    tag: 5eb2f5a
   ingress:
     hosts:
       - host: main.hello-world36.h8r.site
