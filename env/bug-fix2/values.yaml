@@ -1,0 +1,9 @@
+hello-world36-frontend:
+  image:
+    tag: 5eb2f5a
+  ingress:
+    hosts:
+      - host: bug-fix.hello-world36.h8r.site
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
