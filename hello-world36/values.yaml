@@ -1,0 +1,28 @@
+hello-world36-backend:
+  image:
+    tag: 62d465d
+  ingress:
+    hosts:
+      - host: bug-fix.hello-world36.h8r.site
+        paths:
+          - path: /
+            pathType: PRE
+  env:
+    - name: KEY
+      value: VALUE
+    - name: KEY2
+      value: VALUE242 minutes ago • heighliner [Add new env: fm-bug-fix13]
+hello-world36-frontend:
+  image:
+    tag: 5eb2f5a
+  ingress:
+    hosts:
+      - host: bug-fix.hello-world36.h8r.site
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+  env:
+    - name: KEY2
+      value: VALUE2
+    - name: KEY3
+      value: VALUE3
